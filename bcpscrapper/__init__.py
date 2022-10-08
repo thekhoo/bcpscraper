@@ -353,6 +353,10 @@ class ProcedurePDF:
         RETURNS
         -------
         List[str] : A list of strings that contain text from the current page of the PDF split by the subsections.
+
+        SEE ALSO
+        --------
+        ProcedurePDF._getPgaeSections() for the section array.
         """
         section_text = re.split(regex,text)     # Gets all the text for the section headers
         section_text.pop(0)                     # Removes the first item in the array - Text between the page title and first section on the page (Not Required)

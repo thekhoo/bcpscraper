@@ -19,7 +19,7 @@ setup(
     install_requires=['docx','lxml','Pillow','PyPDF2','typing_extensions','python-docx','regex'],
     keywords=['python',"Blackstone's Criminal Practice 2022",'law','law document','lexisnexis','lexislibrary'],
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 4 - Beta",
         "Intended Audience :: Legal Industry",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",

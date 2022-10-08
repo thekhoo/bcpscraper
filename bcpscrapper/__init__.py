@@ -513,13 +513,13 @@ class DocxWriter:
         self.topics = []        # "List[Topic]"" - List of topic objects
         self.pdfs = {}          # "dict" - Dictionary of section and the PDFs (key: "[section]" as str | item: "[pdf_str]" as str)
 
-    def createDocument(self,folder:str) -> int:
+    def createDocument(self,folder:str='') -> int:
         """
-        Generates a document based on the data that is passed into the object. The document is saved in the folder specified in the function parameters.
+        Generates a document based on the data that is passed into the object. The document is saved in the folder specified in the function parameters. If no parameter is passed, it saves the document in the root directory.
 
         PARAMETERS
         ----------
-        folder : str
+        folder : str, default = ''
             The folder where the word document should be saved.
 
         RETURNS

@@ -1,11 +1,13 @@
+from pathlib import Path
 from setuptools import setup, find_packages
 import os
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 DESCRIPTION = "Blackstone's Criminal Practice 2022 PDF Scraper"
-LONG_DESCRIPTION = "A program that scrapes the sections and subsections indicated by the user from Blackstone's Criminal Practice 2022 and puts it into a Word Document (.docx)."
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 # Setting up
 setup(
@@ -14,7 +16,8 @@ setup(
     author="Christopher Khoo Jinn Wei",
     author_email="<khoojinnwei@gmail.com>",
     description=DESCRIPTION,
-    long_description=LONG_DESCRIPTION,
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     packages=find_packages(),
     install_requires=['docx','lxml','Pillow','PyPDF2','typing_extensions','python-docx','regex'],
     keywords=['python',"Blackstone's Criminal Practice 2022",'law','law document','lexisnexis','lexislibrary'],

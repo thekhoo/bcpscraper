@@ -1,0 +1,14 @@
+{
+    "doc_title": "Example Document - Showing How This Works",
+
+    "doc_data": {
+
+        "Topic 1" : {
+            "title": "Example of Topic 1.",
+            "sections": {
+                "D2": [1,3,5,7,8.12,20,21],
+                "D14" : [1,5,12,17]
+            }
+        }
+    }   
+}

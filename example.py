@@ -1,5 +1,5 @@
 import bcpscrapper as bcp
 
-path = 'topics.json'
+path = 'example.json'
 writer = bcp.DocxWriter(path)
 code = writer.createDocument('output')

@@ -74,6 +74,18 @@ TL;DR - A tool to extract subsections as required from Blackstone's Criminal Pra
     writer.createDocument('output')     # This stores it in the output folder
     ```
 
+An overall example of how this would look like in your code would be:
+
+```py
+import bcpscrapper as bcp
+
+path = 'example.json'
+writer = bcp.DocxWriter(path)
+code = writer.createDocument('output')
+```
+
+This is shown in `example.py` and `example.json`.
+
 ## PDF File Naming Convention
 
 Name the PDF file based on the Part and Section that it belongs to. For example:

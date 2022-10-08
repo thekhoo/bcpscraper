@@ -16,7 +16,7 @@ setup(
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
     packages=find_packages(),
-    install_requires=['docx','lxml','Pillow','PyPDF2','typing_extensions'],
+    install_requires=['docx','lxml','Pillow','PyPDF2','typing_extensions','python-docx','regex'],
     keywords=['python',"Blackstone's Criminal Practice 2022",'law','law document','lexisnexis','lexislibrary'],
     classifiers=[
         "Development Status :: 3 - Alpha",
